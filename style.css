@@ -1,0 +1,16 @@
+body{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, rgb(255, 207, 152),rgb(161, 140, 255));
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+.ruler {
+    width: 10cm;
+    min-height: 50px;
+    height: vh;
+    max-height: 500px;
+    background: linear-gradient(to bottom right, rgb(131, 50, 236),rgb(219, 41, 166));
+}

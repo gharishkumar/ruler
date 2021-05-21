@@ -2,7 +2,11 @@ body{
     display: grid;
     place-items: center;
     text-align: center;
-    background-image: linear-gradient(to bottom right, rgb(255, 207, 152),rgb(161, 140, 255));
+    background:
+        linear-gradient(135deg, rgb(250, 170, 148), rgba(255,0,0,0) 60%),
+        linear-gradient(45deg, rgb(214, 120, 151), rgba(0,0,255,0) 60%),
+        linear-gradient(225deg, rgb(108, 184, 219), rgba(0,255,0,0) 60%),
+        linear-gradient(315deg, rgb(150, 98, 199) , rgba(0,255,0,0) 60%);
     min-height: 100vh;
     padding: 0;
     margin: 0;
@@ -12,5 +16,11 @@ body{
     min-height: 50px;
     height: vh;
     max-height: 500px;
-    background: linear-gradient(to bottom right, rgb(131, 50, 236),rgb(219, 41, 166));
+    border-radius: .2em;
+    background: 
+    linear-gradient(to right, white 25%, rgba(255,0,0,0) 25%) .8% 100% / .258em .8em,
+    linear-gradient(to right, white 6%, rgba(255,0,0,0) 6%) .8% 100% / 1.29em 1em,
+    linear-gradient(to right, white 4%, rgba(255,0,0,0) 4%) .8% 100% / 2.58em 1.5em,
+        linear-gradient(to top right,rgb(44, 44, 44), rgb(70, 70, 70));
+    background-repeat: repeat-x;
 }

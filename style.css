@@ -10,17 +10,35 @@ body{
     min-height: 100vh;
     padding: 0;
     margin: 0;
+    counter-reset: division-counter -1;
 }
 .ruler {
-    width: 10cm;
+    width: 10.2cm;
     min-height: 50px;
-    height: vh;
+    height: 10vh;
     max-height: 500px;
-    border-radius: .2em;
+    border-radius: .1cm;
     background: 
-        linear-gradient(to right, white 15%, rgba(255,0,0,0) 15%) .8% 100% / .2325em .8em,
-        linear-gradient(to right, white 6%, rgba(255,0,0,0) 6%) .8% 100% / 1.1625em 1em,
-        linear-gradient(to right, white 4%, rgba(255,0,0,0) 4%) .8% 100% / 2.325em 1.5em,
+        linear-gradient(to right, white .04cm, rgba(255,0,0,0) .04cm) .1cm  100% /  1cm .8cm,
+        linear-gradient(to right, white .02cm, rgba(255,0,0,0) .02cm) .2cm  100% / .5cm .4cm,
+        linear-gradient(to right, white .02cm, rgba(255,0,0,0) .02cm) .3cm  100% / .5cm .4cm,
+        linear-gradient(to right, white .02cm, rgba(255,0,0,0) .02cm) .4cm  100% / .5cm .4cm,
+        linear-gradient(to right, white .02cm, rgba(255,0,0,0) .02cm) .5cm  100% / .5cm .4cm,
+        linear-gradient(to right, white .02cm, rgba(255,0,0,0) .02cm) .6cm  100% /  1cm .6cm,
         linear-gradient(to top right,rgb(44, 44, 44), rgb(70, 70, 70));
     background-repeat: repeat-x;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.divisions::before {
+    content: counter(division-counter);
+    counter-increment: division-counter;
+}
+.divisions {
+    color: white;
+    padding-bottom: .75cm;
+    padding-left: .01cm;
 }

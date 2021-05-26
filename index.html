@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta name="description" content="to make a cm/mm ruler in webpage">
     <meta name="keywords" content="Ruler, HTML, CSS">
     <meta name="author" content="G. Harish Kumar">
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ruler</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script>var zoom = false;</script>
+    <script src="pinch-zoom.js"></script>
 </head>
 <body>
+    <h1>Ruler - that measures</h1>
+    <pinch-zoom>
      <div class="ruler" id="cm">
         <div class="divisions"></div>
         <div class="divisions"></div>
@@ -24,5 +28,7 @@
         <div class="divisions"></div>
         <div class="divisions"></div>
     </div>
+    </pinch-zoom>
+    <button id="calibrate" onclick="toggleScale()">Calibrate</button>
 </body>
 </html>

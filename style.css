@@ -1,7 +1,6 @@
 body{
     display: grid;
-    place-items: center;
-    text-align: center;
+    grid-template-rows: min-content 1fr;
     background:
         linear-gradient(135deg, rgb(250, 170, 148), rgba(255,0,0,0) 60%),
         linear-gradient(45deg, rgb(214, 120, 151), rgba(0,0,255,0) 60%),
@@ -10,7 +9,20 @@ body{
     min-height: 100vh;
     padding: 0;
     margin: 0;
+    overflow: hidden;
     counter-reset: division-counter -1;
+}
+h1 {
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-family: Arial;
+}
+#calibrate {
+    position: absolute;
+    margin: 10px;
+    border-radius: 3px;
+    background: linear-gradient(to top right,rgb(44, 44, 44), rgb(70, 70, 70));
+    color: white;
 }
 .ruler {
     width: 10.2cm;
@@ -41,4 +53,11 @@ body{
     color: white;
     padding-bottom: .75cm;
     padding-left: .01cm;
+}
+pinch-zoom {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    place-items: center;
+    text-align: center;
 }

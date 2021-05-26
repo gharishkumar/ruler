@@ -498,10 +498,3 @@ class PinchZoom extends HTMLElement {
 }
 
 customElements.define('pinch-zoom', PinchZoom);
-
-function toggleScale() {
-    zoom = !zoom;
-    var btn = document.getElementById('calibrate');
-    btn.innerHTML = zoom ? 'OK' : 'Calibrate';
-}
-

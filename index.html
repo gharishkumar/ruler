@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="description" content="to make a cm/mm ruler in webpage">
     <meta name="keywords" content="Ruler, HTML, CSS">
     <meta name="author" content="G. Harish Kumar">
-    <meta name="theme-color" content="#2c2c2c">
+    <meta name="theme-color" content="##2c2c2c">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ruler</title>
+    <title>Ruler-that mearures</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <script>var zoom = false;</script>
     <script src="pinch-zoom.js"></script>
 </head>
 <body>
     <h1><p>Ruler</p><p>that measures</p></h1>
-    <pinch-zoom>
+    <pinch-zoom style="display: none;">
      <div class="ruler" id="cm">
         <div class="divisions"></div>
         <div class="divisions"></div>
@@ -30,7 +29,7 @@
         <div class="divisions"></div>
     </div>
     </pinch-zoom>
-    <pinch-zoom>
+    <pinch-zoom style="display: none;">
         <div class="card" id="credit-card">
             <div class="card-contents">
                 <div class="name">
@@ -56,7 +55,24 @@
             </div>
         </div>
     </pinch-zoom>
+    <div id="calibration-ins" style="display: none;">
+        <div class="ins">It seems that you have not calibrated. Click on <b>calibrate</b> to calibrate.
+        <button class="moreinfobtn" onclick="showMoreInfo()">More info</button><br>
+        <div class="moreinfo" style="display: none;">
+            <b>Why calibration?</b><p>The actual dpi (pixel density) of your screen may be not known to the browser. So, it would be best if you calibrated the screen with a known reference.</p><p>Here we use a credit card to do that.</p>
+        </div>
+        </div>
+    </div>
     <button id="calibrate" onclick="toggleScale()">Calibrate</button>
+    <div id="card-ins" style="display: none;">
+        <div class="ins">Place a credit card on the screen and adjust its size on the screen.
+            <button class="moreinfobtn"onclick="showMoreInfo()">More info</button>
+            <p class="moreinfo" style="display: none;">
+                Adjust size on-screen by pinching with two fingers to zoom in (or) zoom out, (or) using the scroll up or down.
+            </p>            
+            <button onclick="hideCardIns()">OK</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

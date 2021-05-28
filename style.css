@@ -8,11 +8,13 @@
 body{
     display: grid;
     grid-template-rows: min-content 1fr;
+    font-family: Arial;
     background:
         linear-gradient(135deg, rgb(250, 170, 148), rgba(255,0,0,0) 60%),
         linear-gradient(45deg, rgb(214, 120, 151), rgba(0,0,255,0) 60%),
         linear-gradient(225deg, rgb(108, 184, 219), rgba(0,255,0,0) 60%),
         linear-gradient(315deg, rgb(150, 98, 199) , rgba(0,255,0,0) 60%);
+    color: white;
     min-height: 100vh;
     padding: 0;
     margin: 0;
@@ -22,14 +24,17 @@ body{
 h1 {
     color: rgb(51, 51, 51);
     text-align: center;
-    font-family: Arial;
 }
-#calibrate {
-    position: absolute;
-    margin: 10px;
+button {
     border-radius: 3px;
     background: linear-gradient(to top right,rgb(44, 44, 44), rgb(70, 70, 70));
     color: white;
+    cursor: pointer;
+}
+#calibrate {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 .ruler {
     width: 10.2cm;
@@ -65,7 +70,6 @@ h1 {
 .card {
     width: 8.56cm;
     height: 5.397cm;
-    color: white;
     border-radius: .4cm;
     background:
         linear-gradient(to right, white 2cm, rgba(255,0,0,0) 2cm) 6cm  3.5cm /  1.7cm 1.4cm,
@@ -136,4 +140,32 @@ pinch-zoom {
     position: absolute;
     place-items: center;
     text-align: center;
+}
+#calibration-ins {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: radial-gradient(circle at top left,rgba(0,0,0,0) 120px,rgba(0, 0, 0, 0.521) 120px);
+}
+#calibration-ins .ins {
+    padding-top: 150px;
+    padding-left: 50px;
+}
+.moreinfo {
+    margin: 5px;
+}
+#card-ins {
+    width: 100%;
+    height: 100%;
+    background: rgba(126, 126, 126, 0.548);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#card-ins .ins {
+    padding: 10px;
+    border-radius: 7px;
+    background: linear-gradient(to top ,rgba(0, 0, 0, 0.897), rgba(70, 70, 70, 0.9));
 }

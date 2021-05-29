@@ -13,7 +13,7 @@
     "orientation": "any",
     "related_applications": [],
     "prefer_related_applications": false,
-      "icons": [
+    "icons": [
         {
           "src": "/Maskable/maskable_icon_x48.png",
           "sizes": "48x48",
@@ -812,6 +812,68 @@
           "type": "image/png",
           "purpose": "any"
         }
-      ],
+     ],
+    "screenshots" : [
+        {
+        "src": "Screenshots/Screenshot_1.png",
+        "sizes": "1366x768",
+        "type": "image/png"
+        },
+        {
+        "src": "Screenshots/Screenshot_2.png",
+        "sizes": "1366x768",
+        "type": "image/png"
+        },
+        {
+        "src": "Screenshots/Screenshot_3.png",
+        "sizes": "1366x768",
+        "type": "image/png"
+        },
+        {
+        "src": "Screenshots/Screenshot_4.png",
+        "sizes": "1366x768",
+        "type": "image/png"
+        },
+        {
+        "src": "Screenshots/Screenshot_5.png",
+        "sizes": "300x533",
+        "type": "image/png"
+        },
+        {
+        "src": "Screenshots/Screenshot_6.png",
+        "sizes": "300x533",
+        "type": "image/png"
+        },
+        {
+        "src": "Screenshots/Screenshot_7.png",
+        "sizes": "300x533",
+        "type": "image/png"
+        },
+        {
+        "src": "Screenshots/Screenshot_8.png",
+        "sizes": "300x533",
+        "type": "image/png"
+        },
+        {
+        "src": "Screenshots/Screenshot_9.png",
+        "sizes": "1366x768",
+        "type": "image/png"
+        },
+        {
+        "src": "Screenshots/Screenshot_10.png",
+        "sizes": "1366x768",
+        "type": "image/png"
+        },
+        {
+        "src": "Screenshots/Screenshot_11.png",
+        "sizes": "300x533",
+        "type": "image/png"
+        },
+        {
+        "src": "Screenshots/Screenshot_12.png",
+        "sizes": "300x533",
+        "type": "image/png"
+        }
+    ],
     "url": "https://gharishkumar.github.io/ruler"
 }

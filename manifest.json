@@ -6,7 +6,7 @@
     "scope": "/ruler/",
     "display": "fullscreen",
     "start_url": "https://gharishkumar.github.io/ruler/",
-    "background_color": "#000000",
+    "background_color": "transparent",
     "theme_color": "##2c2c2c",
     "description": "to make a cm/mm ruler in webpage",
     "orientation": "any",

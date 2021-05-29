@@ -1,7 +1,7 @@
-//import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
 
-//const el = document.createElement('pwa-update');
-//document.body.appendChild(el);
+const el = document.createElement('pwa-update');
+document.body.appendChild(el);
 
 var btn = document.getElementById("calibrate");
 var zoom = false;
